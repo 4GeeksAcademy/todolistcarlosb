@@ -7,20 +7,28 @@ import rigoImage from "../../img/rigo-baby.jpg";
 const Home = () => {
 	return (
 		<div className="text-center">
-            
+
 
 			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+			<form>
+				<div className="row mb-3">
+					<label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</label>
+					<div className="col-sm-10">
+						<input type="email" className="form-control" id="inputEmail3" />
+					</div>
+				</div>
+				<div className="row mb-3">
+					<label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Password</label>
+					<div className="col-sm-10">
+						<input type="password" className="form-control" id="inputPassword3" />
+					</div>
+				</div>
+				
+				<button type="submit" className="btn btn-primary">Sign in</button>
+			</form>
+
+
+
 		</div>
 	);
 };
